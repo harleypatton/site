@@ -228,7 +228,7 @@
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
                     <h2 class="section-heading">Exclusive Quark and Gluon Jet Properties</h2>
-                    <p class="lead">I developed a method for extracting exclusive quark and gluon probablity distributions from mixed particle jets resulting from proton-proton collisons measured at the ATLAS particle detector at CERN.</p>
+                    <p class="lead">I developed and implemented an algorithm for extracting exclusive quark and gluon probablity distributions from mixed particle jets resulting from proton-proton collisons measured at the ATLAS particle detector at CERN.</p>
                     <p class="lead">First, <a target="_blank" href="https://en.wikipedia.org/wiki/Jet_(particle_physics)">jets</a> are built from topological calorimeter clusters using a cluster weighting (<a target="_blank" href="https://indico.in2p3.fr/event/4545/contribution/3/material/slides/0.pdf">LCW</a>) algorithm. We cannot directly observe quark and gluon jets (we always get a mixture). However, by exploiting variations in the quark/gluon fraction with respect to transverse momentum, I was able to extract exclusive quark and gluon distributions from the data.</p>
                     <p class="lead">I demonstrated the effectiveness of this method on particle-level data simulated in Pythia 8 (particle simulator) by the ATLAS Monte Carlo. This data was simulated with a center of mass energy of 13 TeV to be consistent with the <a target="_blank" href="http://atlas.cern/resources/press/resources-lhc-run-2">Run 2</a> data from the Large Hadron Collider restart in 2016. After using NERSC (National Energy Research Scientific Computing Center) supercomputers to run my code on millions of simulated collsion events, I found my model to have excellent closure over momenta in the range of 500 - 3000 GeV.</p>
                     <p class="lead">I gave a talk on this project at the ATLAS annual meeting at Lawrence Berkeley National Lab in January of 2017. Slides avaliable <a href="img/Exclusive Quark and Gluon Jet Properties.pdf" download>here</a>.</p>
@@ -237,6 +237,32 @@
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
                     <img class="img-responsive" src="img/averages.png" alt="">
                     <img class="img-responsive" src="img/jzx.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-a -->
+
+    <div class="content-section-a">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Quantum Computing Devices Library</h2>
+                    <p class="lead">I created a software library to create and keep track of quantum devices and their qubits in an SQL database. The library API was developed in python with a relational database implemented using SQLAlchemy.</p>
+                    <p class="lead">Qubits are identified by their resonance frequencies and coherence time constants. Each qubit can perform between 10 and 100 quantum gates (logical operations), where each gate is specified by its amplitude, width, and the phase of the control pulse that performs the gate. Devices, qubits, and gates together form a heirarchy of one-to-many relationships.</p>
+                    <p class="lead">Together, these components allow the user to CRUD (create, read, update, and delete) realistic representations of quantum devices. Since data about qubits and gates often changes over time (qubit resonances or coherence times might be measured more accurately, and gates may be re-calibrated), all qubit objects are versioned at every "snapshot" in time. Each qubit is versioned seperately, and gates are versioned along with their parent qubits so that the full state of the qubit-gate relationship can be recovered at any point in time.</p>
+
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <img class="img-responsive" src="img/qubit1.png" alt="">
+                    <br>
+                    <img class="img-responsive" src="img/qubit2.png" alt="">
                 </div>
             </div>
 
