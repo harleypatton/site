@@ -152,7 +152,7 @@
                     <div class="clearfix"></div>
                     <h2 class="section-heading">Lawrence Berkeley National Lab</h2>
                     <h3>Research Apprentice</h3>
-                    <h4 style="text-align:left;">August 2016 - Present<span style="float:right;">Berkeley, CA</span></h4>
+                    <h4 style="text-align:left;"><i>August 2016 - Present</i><span style="float:right;"><i>Berkeley, CA</i></span></h4>
                     <p class="lead">I work for Lawrence Berkeley National Lab's "Atlas Analysis Team", which works with data brought in from the ATLAS Experiment at the Large Hadron Collider at CERN. I write data analysis modules in C++ for ROOT (CERN's object oriented framework for large scale data analysis) in order to resolve issues of detector performance, efficiency, and alignment.</p>
                     <p class="lead">My current research at LBNL is on using measurements of the stopping power acting on charged particles in the Atlas detector in order to model particle fragmentation functions outside of the range of our standard tools (pertubation theory). Previously, I developed a method for extracting exclusive quark/gluon probablity distributions from mixed particle jets meaured at the LHC (descibed below in the "Projects" section).</p>
                 </div>
@@ -161,7 +161,7 @@
                     <div class="clearfix"></div>
                     <h2 class="section-heading">UC Berkeley EECS Department</h2>
                     <h3>Student Instructor</h3>
-                    <h4 style="text-align:left;">August 2016 - Present<span style="float:right;">Berkeley, CA</span></h4>
+                    <h4 style="text-align:left;"><i>August 2016 - Present</i><span style="float:right;"><i>Berkeley, CA</i></span></h4>
                     <p class="lead">I teach a section for Computer Science 70 (Discrete Mathematics and Probability Theory), in which I meet twice per week with a group of thirty lower division students and lecture on the course material. I also hold office hours, hold homework parties, and grade exams. The course website can be found <a target="_blank" href="http://eecs70.org/">here</a>.</p>
                     <p class="lead">I previously lab assisted for Computer Science 61A (Structure and Interpretation of Computer Programs), where I helped lead the lab component of the course each week and held weekly office hours.</p>
                 </div>
@@ -184,7 +184,7 @@
                     <div class="clearfix"></div>
                     <h2 class="section-heading">Rigetti Quantum Computing</h2>
                     <h3>Software Engineering Intern</h3>
-                    <h4 style="text-align:left;">May 2017 - August 2017<span style="float:right;">Berkeley, CA</span></h4>
+                    <h4 style="text-align:left;"><i>May 2017 - August 2017</i><span style="float:right;"><i>Berkeley, CA</i></span></h4>
                     <p class="lead">This summer, I will be interning at Rigetti Quantum Computing to write software as part of their development of a fault-tolerant gate-based solid state quantum processor. Stay tuned for more!</p>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
@@ -192,7 +192,7 @@
                     <div class="clearfix"></div>
                     <h2 class="section-heading">TorBots Robotics</h2>
                     <h3>Student Engineer</h3>
-                    <h4 style="text-align:left;">September 2011 - June 2015<span style="float:right;">Torrance, CA</span></h4>
+                    <h4 style="text-align:left;"><i>September 2011 - June 2015</i><span style="float:right;"><i>Torrance, CA</i></span></h4>
                     <p class="lead">I participated in the design, implementation, and testing of my local FRC robotics team’s projects. Our robots competed in the 2011 FIRST World Championship in St. Louis, Missouri, and came in second place at 2015 Los Angeles Regional.</p>
                 </div>
                 </div>
@@ -228,6 +228,7 @@
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
                     <h2 class="section-heading">Exclusive Quark and Gluon Jet Properties</h2>
+                    <h4><i>August 2016 - January 2017</i></h4>
                     <p class="lead">I developed and implemented an algorithm for extracting exclusive quark and gluon probablity distributions from mixed particle jets resulting from proton-proton collisons measured at the ATLAS particle detector at CERN.</p>
                     <p class="lead">First, <a target="_blank" href="https://en.wikipedia.org/wiki/Jet_(particle_physics)">jets</a> are built from topological calorimeter clusters using a cluster weighting (<a target="_blank" href="https://indico.in2p3.fr/event/4545/contribution/3/material/slides/0.pdf">LCW</a>) algorithm. We cannot directly observe quark and gluon jets (we always get a mixture). However, by exploiting variations in the quark/gluon fraction with respect to transverse momentum, I was able to extract exclusive quark and gluon distributions from the data.</p>
                     <p class="lead">I demonstrated the effectiveness of this method on particle-level data simulated in Pythia 8 (particle simulator) by the ATLAS Monte Carlo. This data was simulated with a center of mass energy of 13 TeV to be consistent with the <a target="_blank" href="http://atlas.cern/resources/press/resources-lhc-run-2">Run 2</a> data from the Large Hadron Collider restart in 2016. After using NERSC (National Energy Research Scientific Computing Center) supercomputers to run my code on millions of simulated collsion events, I found my model to have excellent closure over momenta in the range of 500 - 3000 GeV.</p>
@@ -255,6 +256,7 @@
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
                     <h2 class="section-heading">Quantum Computing Devices Library</h2>
+                    <h4><i>November 2016</i></h4>
                     <p class="lead">I created a software library to create and keep track of quantum devices and their <a target="_blank" href="https://en.wikipedia.org/wiki/Qubit">qubits</a> in an SQL database. The library API was developed in python with a relational database implemented using <a target="_blank" href="http://www.sqlalchemy.org/">SQLAlchemy</a>.</p>
                     <p class="lead">Qubits are identified by their resonance frequencies and coherence time constants. Each qubit can perform between 10 and 100 quantum gates (logical operations), where each gate is specified by its amplitude, width, and the phase of the control pulse that performs the gate. Devices, qubits, and gates together form a heirarchy of one-to-many relationships.</p>
                     <p class="lead">Together, these components allow the user to CRUD (create, read, update, and delete) realistic representations of quantum devices. Since data about qubits and gates often changes over time (qubit resonances or coherence times might be measured more accurately, and gates may be re-calibrated), all qubit objects are versioned at every "snapshot" in time. Each qubit is versioned seperately, and gates are versioned along with their parent qubits so that the full state of the qubit-gate relationship can be recovered at any point in time.</p>
@@ -274,6 +276,81 @@
 
     </div>
     <!-- /.content-section-a -->
+
+    <div class="content-section-a">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Enimga</h2>
+                    <h4><i>September 2016 - October 2016</i></h4>
+                    <p class="lead">I wrote a computer simulation of the German M4 Enigma Machine used to encrypt messages during World War II. It recreates the full Enigma system used by the German Navy, consisting of eight moving rotors, two fixed rotors, and two reflectors. It implements a progressive substitution cipher, allowing for 614,175,744 unique possible encryptions for any text string. Written in Java.</p>
+
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <h1><br></h1>
+                    <img class="img-responsive" src="img/enigma.png" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-a -->
+
+    <div class="content-section-a">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">BearMaps</h2>
+                    <h4><i>April 2016</i></h4>
+                    <p class="lead">I wrote the back end of a mapping program rendering the UC Berkeley campus and surrounding area, using data pulled from OpenStreetMap. It finds the shortest path from source to destination using the A* search algorithm. Written in Java.</p>
+
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <h1><br></h1>
+                    <img class="img-responsive" src="img/bearmaps.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-a -->
+
+<!--
+    <div class="content-section-a">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Portfolio Website</h2>
+                    <h4><i>January 2017 - Present</i></h4>
+                    <p class="lead">This website! I made a portfolio website written in HTML, generated through the Ruby gem Jekyll, and hosted by Github Pages. It's always a work in progress, so email any suggestions/improvements to "hpatton@berkeley.edu".</p>
+                    <p class="lead">Also, for anyone looking to get into web development, feel free to use this site as a template! The source code is avaliable here.</p>
+
+
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <h1><br></h1>
+                    <img class="img-responsive" src="img/averages.png" alt="">
+                </div>
+            </div>
+
+        </div>
+        
+
+    </div>
+   -->
 
 
     <!-- delet this -->
