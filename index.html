@@ -157,7 +157,8 @@
                     <h3>Research Apprentice</h3>
                     <h4 style="text-align:left;"><i>August 2016 - Present</i><span style="float:right;"><i>Berkeley, CA</i></span></h4>
                     <p class="lead">I'm part of Lawrence Berkeley National Lab's "ATLAS Analysis Team", which works with data brought in from the <a target="_blank" href="http://atlas.cern/">ATLAS Experiment</a> at the Large Hadron Collider at CERN. I write data analysis modules in C++ for ROOT (CERN's object oriented framework for large scale data analysis) in order to resolve issues of detector performance, efficiency, and alignment.</p>
-                    <p class="lead">My current research at LBNL is on using measurements of the stopping power acting on charged particles in the ATLAS detector in order to model particle fragmentation functions outside of the range of our standard tools (pertubation theory). Previously, I developed a method for extracting exclusive quark/gluon probablity distributions from mixed particle jets meaured at the LHC (descibed below in the "Projects" section).</p>
+                    <p class="lead">My current research at LBNL is on applying topics in machine learning in order to train a neural network designed to identify charged particles resulting from collisions in the ATLAS detector.
+                    Previously, I developed a method for extracting exclusive quark/gluon probablity distributions from mixed particle jets meaured at the LHC (descibed below in the "Projects" section).</p>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
                     <hr class="section-heading-spacer">
@@ -284,7 +285,7 @@
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
                     <h2 class="section-heading">Quantum Computing Devices Library</h2>
-                    <h4><i>November 2016</i></h4>
+                    <h4><i>November 2016 - December 2016</i></h4>
                     <p class="lead">I created a software library to create and keep track of quantum devices and their <a target="_blank" href="https://en.wikipedia.org/wiki/Qubit">qubits</a> in an SQL database. The library API was developed in python with a relational database implemented using <a target="_blank" href="http://www.sqlalchemy.org/">SQLAlchemy</a>.</p>
                     <p class="lead">Qubits are identified by their resonance frequencies and coherence time constants. Each qubit can perform between 10 and 100 quantum gates (logical operations), where each gate is specified by its amplitude, width, and the phase of the control pulse that performs the gate. Devices, qubits, and gates together form a heirarchy of one-to-many relationships.</p>
                     <p class="lead">Together, these components allow the user to CRUD (create, read, update, and delete) realistic representations of quantum devices. Since data about qubits and gates often changes over time (qubit resonances or coherence times might be measured more accurately, and gates may be re-calibrated), all qubit objects are versioned at every "snapshot" in time. Each qubit is versioned seperately, and gates are versioned along with their parent qubits so that the full state of the qubit-gate relationship can be recovered at any point in time.</p>
@@ -311,14 +312,14 @@
                 <div class="col-lg-5 col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">Digit Classifier</h2>
-                    <h4><i>January 2017</i></h4>
-                    <p class="lead">I made a digit classifier that recognizes handwritten digits using a <a target="_blank" href="https://en.wikipedia.org/wiki/Support_vector_machine">support vector machine</a>. I used 50,000 training samples and 10,000 testing samples from the <a target="_blank" href="https://en.wikipedia.org/wiki/MNIST_database">MNIST dataset</a> of handwritten digits from the US Census Bureau, and achieved a 96% testing accuracy. Written in Python.</p>
+                    <h2 class="section-heading">Particle Classifier</h2>
+                    <h4><i>February 2017 - Present</i></h4>
+                    <p class="lead">I am currently working with <a target="_blank" href="https://bnachman.web.cern.ch/bnachman/index.html">Dr. Ben Nachman</a> at LBNL to create a classifier that will be able to distinguish pion, kaon, and proton tracks recorded in the ATLAS detector at CERN. We are using measurements of the stopping power acting on charged particles in different layers of the ATLAS <a target="_blank" href="http://atlas.web.cern.ch/Atlas/GROUPS/INNER_DETECTOR/PIXELS/pixel.html">Pixel</a> detecors as features to train a neural network to distinguish the tracks left by different particle types, with the intention of using this classifier to model particle fragmentation functions outside of the range of our standard tools.</p>
 
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
                     <h1><br></h1>
-                    <img class="img-responsive" src="img/mnist.png" alt="">
+                    <img class="img-responsive" src="img/pion_mistag.png" alt="">
                 </div>
             </div>
 
@@ -326,6 +327,7 @@
         
 
     </div>
+
 
 <div class="content-section-a">
 
@@ -349,6 +351,30 @@
         
 
     </div>    
+
+<div class="content-section-a">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Digit Classifier</h2>
+                    <h4><i>January 2017</i></h4>
+                    <p class="lead">I made a digit classifier that recognizes handwritten digits using a <a target="_blank" href="https://en.wikipedia.org/wiki/Support_vector_machine">support vector machine</a>. I used 50,000 training samples and 10,000 testing samples from the <a target="_blank" href="https://en.wikipedia.org/wiki/MNIST_database">MNIST dataset</a> of handwritten digits from the US Census Bureau, and achieved a 96% testing accuracy. Written in Python.</p>
+
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <h1><br></h1>
+                    <img class="img-responsive" src="img/mnist.png" alt="">
+                </div>
+            </div>
+
+        </div>
+        
+
+    </div>
+
 
     <div class="content-section-a">
 
@@ -424,31 +450,7 @@
     </div>
     <!-- /.content-section-a -->
 
-<!--
-    <div class="content-section-a">
 
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Portfolio Website</h2>
-                    <h4><i>January 2017 - Present</i></h4>
-                    <p class="lead">This website! I made a portfolio website written in HTML, generated through the Ruby gem Jekyll, and hosted by Github Pages. It's always a work in progress, so email any suggestions/improvements to "hpatton (at) berkeley (dot) edu".</p>
-                    <p class="lead">Also, for anyone looking to get into web development, feel free to use this site as a template! The source code is avaliable <a target="_blank" href="https://github.com/harleypatton/site">here</a>.</p>
-
-                </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <h1><br></h1>
-                    <img class="img-responsive" src="img/homepage.png" alt="">
-                </div>
-            </div>
-
-        </div>
-        
-
-    </div>
--->
 
 
     <!-- delet this -->
