@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+    <!--- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+	<title>Aaron Vontell</title>
+    <meta name="description" content="Harley Patton - Quantum Programmer, Web Developer, Android Developer, EDM Enthusiast, UI Designer">
+    <meta name="keywords" content="quantum, quantum computing, aaron, vontell, quantum programming, oracle, android">
+    <meta name="author" content="Aaron Vontell">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="favicomatic/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="favicomatic/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicomatic/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="favicomatic/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="favicomatic/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="favicomatic/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="favicomatic/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="favicomatic/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="favicomatic/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="favicomatic/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="favicomatic/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicomatic/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="favicomatic/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="favicomatic/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="favicomatic/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="favicomatic/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="favicomatic/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="favicomatic/mstile-310x310.png" />
+    
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "name": "Aaron Vontell",
+      "url": "http://avontell.com",
+      "email": "vontell@mit.edu",
+      "affiliation": "MIT CSAIL / MIT RLE",
+      "image": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAWfAAAAJDZhOTMwMjBlLTg4MGMtNGU1ZS05ZWIyLTRlNjYxMzkxZjA2MA.jpg",
+      "sameAs": [
+        "http://www.facebook.com/avontell",
+        "http://www.twitter.com/avontell",
+        "https://www.linkedin.com/in/aaron-vontell-65068197/"
+      ]
+    }
+    </script>
+    
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <!-- Styling and Fonts
+    ================================================== -->
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <link rel="stylesheet" href="simple.css">
+    
+    <!-- Scripts
+    ================================================== -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+    <script src="app.js"></script>
+
+</head>
+<body ng-app="avontellApp">
+    
+    <div id="panel" ng-controller="panelController">
+        
+        <h1 id="title-logo">aaron v.</h1><p id="close-menu" ng-click="close()">close menu</p>
+        <a href="#">Home</a><br />
+        <a href="#blog">Blog</a><br />
+        <a href="#resume">Resume</a><br />
+        <a href="#awards">Awards</a><br />
+        <a href="#projects">Projects</a><br />
+        <a href="#papers">Papers</a><br />
+        <br />
+        <a href="#reviews">Movie Reviews</a><br />
+        <a href="#reviews">Book Reviews</a><br />
+        <a href="#gallery">Gallery</a><br />
+        <br />
+        <a target="_blank" href="https://twitter.com/avontell">Twitter</a><br />
+        <a target="_blank" href="https://www.facebook.com/avontell">Facebook</a><br />
+        
+    </div>
+    
+    <div id="content" ng-controller="baseController">
+        <p id="menuOpen" ng-click="open()">Open menu</p>
+        <div ng-view autoscroll></div>
+    </div>
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-102029567-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    
+</body>
