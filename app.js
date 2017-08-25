@@ -56,6 +56,12 @@ app.config(function($routeProvider) {
         .when('/papers', {
             templateUrl : 'pages/papers.html',
             controller  : 'papersController'
+        })
+
+        // route for the experience page
+        .when('/experience', {
+            templateUrl : 'pages/experience.html',
+            controller  : 'experienceController'
         });
 });
 
@@ -146,6 +152,11 @@ app.controller('resumeController', function($scope) {
 });
 
 app.controller('papersController', function($scope) {
+
+    
+});
+
+app.controller('experienceController', function($scope) {
 
     
 });
