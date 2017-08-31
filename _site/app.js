@@ -62,6 +62,12 @@ app.config(function($routeProvider) {
         .when('/experience', {
             templateUrl : 'pages/experience.html',
             controller  : 'experienceController'
+        })
+
+        // route for the coursework page
+        .when('/coursework', {
+            templateUrl : 'pages/coursework.html',
+            controller  : 'courseworkController'
         });
 });
 
@@ -157,6 +163,11 @@ app.controller('papersController', function($scope) {
 });
 
 app.controller('experienceController', function($scope) {
+
+    
+});
+
+app.controller('courseworkController', function($scope) {
 
     
 });
