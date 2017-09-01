@@ -1,112 +1,49 @@
 <h2>Projects</h2>
 
-<p id="projects-intro">Below is a list of some of my projects from the past few years, either from my research or from my free time. If you are interested in any or have any questions, let me know from the contact page!</p>
+<p id="projects-intro">Below is a list of some of my projects from the past few years, either from my research or from my free time. If you are interested in any or have any questions, let me know!</p>
 
-<p>(Hint: Check out my coolest projects, like Battlecode, AMA, and Quantum Program Optimization)</p><br />
-<h2>Quantum Programming Projects</h2>
 <div class="section group">
     <div class="col span_1_of_3 proj-box">
-        <h3>Quantum Compilers and Circuit Optimization</h3>
-        <p class="proj-caption">While working as an intern at Rigetti Computing, I was tasked with working on the compiler and optimizer which processes <a target="_blank" href="https://arxiv.org/abs/1608.03355">Quil</a> code, which then gets executed on Rigetti's quantum computers. This was a fun challenge for me, which involved thinking about and implementing control flow graph optimization, dead code elimination, quantum gate fusion, and algorithmic techniques for making the quantum virtual machine faster. The project also taught me about the usage of Common Lisp.</p>
-        <p class="proj-info">Writeup and more info coming soon!</p>
+        <h3>Quark/Gluon Regression Model</h3>
+        <p class="proj-caption">I worked with <a href="https://bnachman.web.cern.ch/bnachman/">Dr. Ben Nachman</a> to develop and implement an algorithm for extracting exclusive quark and gluon probablity distributions from mixed particle jets resulting from proton-proton collisons measured at the ATLAS particle detector at CERN. I demonstrated the effectiveness of this method on particle-level data simulated in Pythia 8 (particle simulator) by the ATLAS Monte Carlo, running on NERSC (National Energy Research Scientific Computing Center) supercomputers.</p>
+        <p class="proj-info">See the code at #TODO: Add link</p>
 	</div>
     <div class="col span_1_of_3 proj-box">
-        <h3>FPGA Programming for NV Centers</h3>
-        <p class="proj-caption">Using a high-level FPGA programming interface, this project is geared toward the creation of a tool set for generating conditional pulse sequences. These pulse sequences will be used for nitrogen-vacancy center initialization and Rabi oscillations. See the papers section for more details.</p>
-        <p class="proj-info">See the code at <a target="_blank" href="https://github.com/vontell/artiq-control">github.com/vontell/artiq-control</a></p>
+        <h3>Particle Classifier</h3>
+        <p class="proj-caption">I am currently working to create a classifier to distinguish pion, kaon, and proton tracks recorded in the ATLAS detector at CERN. I am using measurements of the stopping power acting on charged particles in different layers of the ATLAS Pixel detecors as features to train a neural network to distinguish the tracks left by different particle types, with the intention of using this classifier to model particle fragmentation functions outside of the range of our standard tools.</p>
+        <p class="proj-info">See the code at #TODO: Add link
 	</div>
 	<div class="col span_1_of_3 proj-box">
-        <h3>Neural Network for NV-Center Classification</h3>
-        <p class="proj-caption">Using a neural network made with TensorFlow, and a small set of training data consisting of spectrum scans of possible nitrogen-vacancy centers in diamond, we were able to decide with decent accuracy whether or not the given scan was characteristic of a Nitrogen-vacancy center.</p>
-        <p class="proj-info">See the code at <a target="_blank" href="https://github.com/vontell/NV-NeuralNet">github.com/vontell/NV-NeuralNet</a></p>
+        <h3>Facelift</h3>
+        <p class="proj-caption">My friends <a href="https://github.com/richardzhu">Richard</a>, <a href="https://joelin0.github.io">Joe<a/>, <a href="https://github.com/vontell">Aaron</a>, and I built a web application that adds imperceptible noise to photos that contain faces in order to cause deep facial recognition algorithms (such as Facebook's <a href="https://www.cs.toronto.edu/~ranzato/publications/taigman_cvpr14.pdf">DeepFace</a>) to misclassify, allowing the user to protect their privacy online. We use classic Haar-cascade based algorithms to detect and segment possible faces, and a projected gradient descent based targeted adversarial attack to disguise the face once it is detected.</p>
+        <p class="proj-info">Demo coming soon!</a></p>
 	</div>
 </div>
 
 <div class="section group">
+    <div class="col span_1_of_3 proj-box">
+        <h3>TAQOS and QStudio</h3>
+        <p class="proj-caption">My friend <a href="https://github.com/vontell">Aaron</a> and I have begun putting together a suite of tools to make quantum programming more accessible to researchers and the general public. TAQOS (Technology Agnostic Quantum Operating System) is an open-source collection of abstracted modules which use specific drivers and hardware implementations to run quantum information experiments. Over the course of the next few months, our technology will be integrated into some of the control systems running experiments at the <a href="http://www.rle.mit.edu/qp/">MIT Quantum Photonics Lab</a>. Our suite also includes QStudio, a quantum circuit IDE and learning resource.</p>
+        <p class="proj-info">See the TAQOS code (so far) at <a href="https://github.com/TAQOS/TAQOS">github.com/TAQOS/TAQOS</a>, and check out the QStudio website at <a href="http://www.qstudio.io">qstudio.io</a>.</p>
+    </div>
     <div class="col span_1_of_3 proj-box">
         <h3>Quantum Algorithms</h3>
-        <p class="proj-caption">While working at Rigetti Quantum Computing as a Junior Quantum Engineer Intern, I helped to develop quantum algorithms using their open source platform Forest. I helped to implement algorithms such as Shor's algorithm, amplitude amplification, the quantum Fourier transform, superdense coding, and more.</p>
-        <p class="proj-info">See my contributions at <a target="_blank" href="https://github.com/rigetticomputing/grove">github.com/rigetticomputing/grove</a></p>
-	</div>
+        <p class="proj-caption">While working at Rigetti Computing as a Software Engineer Intern, I helped to develop quantum algorithms using their open source platform <a href="http://www.rigetti.com/index.php/forest">Forest</a>. I implemented algorithms such as Shor's Algorithm, the Duestch-Jozsa Algorithm, arbitrary state generation, and more. I also built a website to demonstrate the power of the Quantum Approximate Optimization Algorithm to find approximate solutions to NP-complete problems.</p>
+        <p class="proj-info">See my contributions at <a href="https://github.com/rigetticomputing/grove">github.com/rigetticomputing/grove</a>, and check out the demo at <a href="http://demo.rigetti.com">demo.rigetti.com</a>.
+    </div>
     <div class="col span_1_of_3 proj-box">
-        <h3>Race Against a Quantum Computer</h3>
-        <p class="proj-caption">Using a quantum virtual machine and the Quantum Approximate Optimization Algorithm, my friend <a target="_blank" href="http://harleypatton.com">Harley</a> and I built a website to demo the power of Rigetti's new open source quantum programming platform, called Forest.</p>
-        <p class="proj-info">See the result at <a target="_blank" href="http://demo.rigetti.com">demo.rigetti.com</a></p>
-	</div>
-    <div class="col span_1_of_3 proj-box">
-        <h3>bloch-js</h3>
-        <p class="proj-caption">In part to teach others about quantum computers, my friend <a target="_blank"  href="http://joelin0.github.io">Joe</a> and I built bloch-js, a simple JavaScript plugin for an interactive Bloch sphere. Using three.js, the applet features pannable interactions, arbitrary rotations, precession tracing, and data set simulation.</p>
-        <p class="proj-info">See the code at <a target="_blank" href="https://github.com/vontell/bloch-js">github.com/vontell/bloch-js</a></p>
-	</div>
+        <h3>Letter Classifier</h3>
+        <p class="proj-caption">The introduction to machine learning course at UC Berkeley hosted a Kaggle competition, in which each student in the course wrote a neural net to classify handwritten letters from the <a href="https://en.wikipedia.org/wiki/MNIST_database">MNIST</a> dataset. My implementation utilized ReLU activation in the hidden layers and a softmax output layer, regularized with L2 and dropout. It scored a testing accuracy 1.327% higher than that of the course staff. </p>
+    </div>
 </div>
 
 <div class="section group">
     <div class="col span_1_of_3 proj-box">
-        <h3>QStudio</h3>
-        <p class="proj-caption">In an attempt to make quantum programming easier for beginners, I began developing a quantum circuit IDE and learning resource, called QStudio. I did not get the time to finish this project yet, but it current allows for selecting and dropping Hadamard gates onto a circuit, adding extra qubits to this circuit, and also features a text editor for eventually editing .qasm and .quil code.</p>
-        <p class="proj-info">See the code at <a target="_blank" href="https://github.com/vontell/qstudio">github.com/vontell/qstudio</a></p>
-	</div>
-</div>
-
-<h2>Web Development Projects</h2>
-<div class="section group">
-    <div class="col span_1_of_3 proj-box" id="battlecode">
-        <h3>Battlecode</h3>
-        <p class="proj-caption">Battlecode is MIT's longest running programming competition, with a new game developed every year. With over 3000 participants (which includes high school students, undergraduates, graduates, and international students), the competition requires the use of AI and strategy to beat another team at a certain task. My role as a developer on the team (after competing for a year as a participant) has been developing a new website and helping to plan the competition.</p>
-        <p class="proj-info">See more at <a target="_blank" href="https://battlecode.org">battlecode.org</a></p>
-	</div>
+        <h3>Enigma</h3>
+        <p class="proj-caption">I wrote a computer simulation of the German M4 Enigma Machine used to encrypt messages during World War II. It recreates the full Enigma system used by the German Navy, consisting of eight moving rotors, two fixed rotors, and two reflectors. It implements a progressive substitution cipher, allowing for 614,175,744 unique possible encryptions for any text string.</p>
+    </div>
     <div class="col span_1_of_3 proj-box">
-        <h3>ErrorCode</h3>
-        <p class="proj-caption">ErrorCode is a code testing platform built during HackMIT 2016. The platform allows users to upload snippets of code which other users can write tests for, in a gamified way. Test cases are upvoted, and users win points based on their test reputation.</p>
-        <p class="proj-info">See the code at <a target="_blank" href="https://github.com/vontell/ErrorCode">github.com/vontell/ErrorCode</a></p>
-	</div>
-    <div class="col span_1_of_3 proj-box">
-        <h3>Judgd</h3>
-        <p class="proj-caption">Using TensorFlow, my friend <a target="_blank" href="https://cepp.ch/">Cooper</a> and I built a website powered by TensorFlow to scrape data from Devpost, a popular hackathon hosting website. After parsing this data with a beefy AWS instance, we were able to predict and view the probability of winning a hackathon based on the number of team members, technologies used, etc...</p>
-        <p class="proj-info">See the code at <a target="_blank" href="https://github.com/vontell/Judgd">github.com/vontell/Judgd</a></p>
-	</div>
-</div>
-
-<h2>Android Development Projects</h2>
-<div class="section group">
-    <div class="col span_1_of_3 proj-box">
-        <h3>IndicatorBinder</h3>
-        <p class="proj-caption">IndicatorBinder is an Android library which makes attaching indicators to your ViewPagers super simple. I started this project out of my own frustration for easily adding this feature to one of my applications. Available for download via Gradle.</p>
-        <p class="proj-info">See the code at <a target="_blank" href="https://github.com/vontell/IndicatorBinder">github.com/vontell/IndicatorBinder</a></p>
-	</div>
-    <div class="col span_1_of_3 proj-box" id="ama">
-        <h3>Accessibility for Mobile Applications</h3>
-        <p class="proj-caption">Under the Decentralized Information Group at MIT CSAIL, this project is devoted to analyzing the landscape of accessibility of native mobile applications. The project also involves working on a tool set and list of resources for developing accessible applications.</p>
-        <p class="proj-info">See the project at <a target="_blank" href="http://ama-csail.github.io">ama-csail.github.io</a></p>
-	</div>
-    <div class="col span_1_of_3 proj-box">
-        <h3>MathIt</h3>
-        <p class="proj-caption">MathIt is an Android application that allows friends to send eachother LaTeX through Facebook Messenger and other social media platforms. I started this project because my friends and I would always have trouble sending long equations through Facebook Messenger. The project uses MathJax to render the LaTeX.</p>
-        <p class="proj-info">See the code at <a target="_blank" href="https://github.com/vontell/MathIt-Android">github.com/vontell/MathIt-Android</a></p>
-	</div>
-</div>
-<div class="section group">
-    <div class="col span_1_of_3 proj-box">
-        <h3>Highlights</h3>
-        <p class="proj-caption">Highlights is an Android application that I worked on with my friends <a href="https://cepp.ch/" target="_blank">Cooper</a> and Ali at YHack 2016. The application utilizes a machine learning backend which parses recently missed videos from your YouTube subscriptions to provide 10-30 second "summary" clips of that video. These small clips of relevant information are then displayed in a Snapchat-like way.</p>
-        <p class="proj-info">See the code at <a target="_blank" href="https://github.com/vontell/Highlights">github.com/vontell/Highlights</a></p>
-	</div>
-    <div class="col span_1_of_3 proj-box">
-        <h3>FancySlider</h3>
-        <p class="proj-caption">While working on a fitness application, I needed a weight and height slider which had ticks, much like a ruler. I couldn't find any that fit my needs, so I made my own! My custom view is highly customizable (change the color, tick heights, width, precision, etc...), and is also quite efficient since it uses a RecyclerView to hold the slider components. The library can be easily imported as a Gradle / Maven dependency.</p>
-        <p class="proj-info">See the code at <a target="_blank" href="https://github.com/VP-Technologies/FancySlider">github.com/VP-Technologies/FancySlider</a></p>
-	</div>
-</div>
-
-<h2>Other Projects</h2>
-<div class="section group">
-    <div class="col span_1_of_3 proj-box">
-        <h3>Parcio</h3>
-        <p class="proj-caption">Parcio was a startup operating out of the Boston area, creating an application for crowd-sourced parking discovery, where users could find and mark public parking spaces. I was the lead developer, but near the end of the application development, the two founders who started the company suddenly disappeared... spooky.</p>
-	</div>
-    <div class="col span_1_of_3 proj-box">
-        <h3>CarSwipe</h3>
-        <p class="proj-caption">CarSwipe is a startup which is working on a better way to buy new and used cars from dealerships. The mobile interfaces provide a Tinder-like way to find and show interest in cars. I served as the lead developer until I had to get back to my schoolwork.</p>
-        <p class="proj-info">See the website at <a target="_blank" href="http://carswipe.com">carswipe.com</a></p>
-	</div>
+        <h3>BearMaps</h3>
+        <p class="proj-caption">I wrote the back end of a mapping program rendering the UC Berkeley campus and surrounding area, using data pulled from OpenStreetMap. It finds the shortest path from source to destination using the A* search algorithm.</p>
+    </div>
 </div>
