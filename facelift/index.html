@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<!--
+	Story by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Facelift - Protect your privacy</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="static/assets/css/main.css" />
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="divided">
+
+				<!-- One -->
+					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+						<div class="content">
+							<h1 style="font-size: 92px;"><img src="static/images/logo.png" height="72px"/>Facelift</h1>
+                            <p class="major">The easiest way to protect your identity and privacy online.</p>
+							<ul class="actions vertical">
+								<li><a href="#first" class="button big wide smooth-scroll-middle">Learn More</a></li>
+                                <li><a href="#second" class="button big wide smooth-scroll-middle">Get Started</a></li>
+							</ul>
+						</div>
+						<div class="image">
+							<img src="static/images/cover2.png" alt="" />
+						</div>
+					</section>
+
+				<!-- Two -->
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
+						<div class="content">
+							<h2>Trick Facebook into thinking you're somebody else.</h2>
+							<p>Using classic Haar-cascade based algorithms to find faces within an image, a <b>targeted adversarial attack</b> is used to add noise such that all faces will be misclassified by deep facial recognition algorithms, such as those used by Facebook and Google. However, to a human, the picture looks the same!</p>
+							<ul class="actions vertical">
+								<li><a href="https://arxiv.org/pdf/1803.00401.pdf" class="button">More info</a></li>
+							</ul>
+						</div>
+						<div class="image">
+							<img src="static/images/haarFace.jpg" alt="" />
+						</div>
+					</section>
+						
+				<!-- Six -->
+					<section class="wrapper style1 align-center">
+                       
+                        
+						<div class="inner" id="second">
+                            <div id="pipe"></div>
+							<h2>Try out Facelift!</h2>
+							<p>Facelift protects your privacy, and the privacy of those you care about. Try it out below by selecting a <b>base image</b> and an <b>attack image</b>. Face recognition algorithms will then see the attack image within the base image!</p>
+							<div class="items style1 medium">
+								<section id="baseCont">
+									<h3>Base Image</h3>
+									<input name="base" class="inputFile" id="baseInput" type="file" onchange="previewBaseFile()"><br>
+                                    <label for="baseInput" class="image-label"><img id="baseImage" src="static/images/base.png" height="200" alt="Choose a base image..."></label>
+								</section>
+								<section id="attackCont">
+									<h3>Attack Image</h3>
+									<input name="attack" class="inputFile" id="attackInput" type="file" onchange="previewAttackFile()"><br>
+                                    <label for="attackInput" class="image-label"><img id="attackImage" src="static/images/attack.png" height="200" alt="Choose an attack image..."></label>
+                                    
+								</section>
+								<!--section>
+									<span class="icon style2 major fa-bar-chart"></span>
+									<h3>Dolor</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+                                </section-->
+							</div>
+                            <ul class="actions vertical" id="startButton">
+								<li><a href="#" class="button">Start!</a></li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- Footer -->
+				<footer class="wrapper style1 align-center">
+						<div class="inner">
+					<!--		<ul class="icons">
+								<li><a href="#" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								<li><a href="#" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
+							</ul> -->
+							<p>&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+						</div>
+					</footer> 
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="static/assets/js/jquery.min.js"></script>
+			<script src="static/assets/js/jquery.scrollex.min.js"></script>
+			<script src="static/assets/js/jquery.scrolly.min.js"></script>
+			<script src="static/assets/js/skel.min.js"></script>
+			<script src="static/assets/js/util.js"></script>
+			<script src="static/assets/js/main.js"></script>
+            <script src="static/assets/js/adversary.js"></script>
+	</body>
+</html>
